@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div id="text">CountDown Timer</div>
+            <form action="#">
+                <input type="number" id="hour" placeholder="Hour" autocomplete="off" value="">
+                <input type="number" id="min" placeholder="Minute" autocomplete="off" value="">
+                <input type="number" id="sec" placeholder="Second" autocomplete="off" value="">
+            </form>
+            <div class="button">
+                <button id="start">Start</button>
+                <button id="reset" onclick="window.location.reload()">Reset</button>
+            </div>
+
+        </div>
+        <audio id="myAudio">
+            <source src="beep-01a.wav" type="audio/ogg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
